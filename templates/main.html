@@ -3,8 +3,26 @@
   <head>
     <title>{{ title }}</title>
   </head>
+  <style>
+    body {
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    }
+    h3 {color: green;}
+    td {color: red;}
+    h2 {color: white;}
+    big {
+    font-size: '20px';
+    color: purple;
+    text-align: center;
+    }
+  </style>
   <body>
-    <table>
+    <h1><center>Career Finder</center></h1>
+    <h3>The perfect career for you to pursue is *drumroll*: <big>{{ job }}</big>!</h3>
+    <p>Here are the possibilities considered and their percent likelihood:</p>
+    <table border="1px">
+      <tr><td>Career</td><td>Percent Likelihood</td></tr>
       {% for row in table%}
       <tr>
 	<td> {{ row }} </td>
