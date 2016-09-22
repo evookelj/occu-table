@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <table>
+      {% for row in table%}
+      <tr>
+	<td> {{ row }} </td>
+	<td> {{ table[row] }} </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
